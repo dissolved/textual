@@ -1,6 +1,6 @@
 # Messages & Events
 
-Each component of a Textual application has it its heart a queue of messages and a task which monitors this queue and calls Python code in response. The queue and task are collectively known as a _message pump_.
+Each component of a Textual application has at its heart a queue of messages and a task which monitors this queue and calls Python code in response. The queue and task are collectively known as a _message pump_.
 
 You will most often deal with _events_ which are a particular type of message that are created in response to user actions, such as key presses and mouse clicks, but also internal events such as timers. These events typically originate from a Driver class which sends them to an App class which is where you write code to respond to those events.
 
